@@ -6,12 +6,16 @@ sudo vi /etc/apt/sources.list
 
 :%s/ap-northeast-2.ec2.archive.ubuntu.com/mirror.kakao.com/
 
+apt update
+
 # Install PHP as Apache Module
 sudo apt install php8.0 libapache2-mod-php8.0 -y
 
 sudo apt install php8.0-{bcmath,bz2,cgi,cli,curl,decimal,dev,fpm,gd,gmp,grpc,http,mbstring,mcrypt,mysql,opcache,psr,readline,swoole,tidy,uuid,xdebug,xml,xmlrpc,zip,xsl,raphf} -y
 
 apt purge php7.3
+
+https://yorublog.tistory.com/68
 
 # Configure Apache with PHP-FPM
 sudo apt update
