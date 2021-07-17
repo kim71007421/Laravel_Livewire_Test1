@@ -22,8 +22,11 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 
-phpmyadmin
 .env
+.git
+.gitignore
+
+phpmyadmin
 livewire/storage
 livewire/config
 livewire/vendor
