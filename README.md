@@ -46,3 +46,9 @@ sudo apt-get update
 sudo apt-get install git -y
 
 git --version
+
+
+# Laravel 설치
+composer global require laravel/installer
+
+composer create-project --prefer-dist laravel/laravel livewire
