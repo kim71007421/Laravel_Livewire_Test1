@@ -30,3 +30,7 @@ phpmyadmin
 livewire/storage
 livewire/config
 livewire/vendor
+
+composer.json
+composer.lock
+package.json

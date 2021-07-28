@@ -52,3 +52,56 @@ git --version
 composer global require laravel/installer
 
 composer create-project --prefer-dist laravel/laravel livewire
+
+# Mysql 캐릭터셋 설정
+[client]
+default-character-set=utf8
+
+[mysql]
+default-character-set=utf8
+
+[mysqld]
+collation-server = utf8_unicode_ci
+init-connect='SET NAMES utf8'
+character-set-server = utf8
+
+
+[client]
+default-character-set = utf8mb4
+
+[mysql]
+default-character-set = utf8mb4
+
+[mysqld]
+character-set-client-handshake = FALSE
+character-set-server = utf8mb4
+collation-server = utf8mb4_unicode_ci
+
+/etc/init.d/mysql restart
+
+# Install Livewire
+composer require livewire/livewire
+
+# node js 16.x
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+apt-get install -y nodejs
+
+# tailwindcss
+npm install -D laravel-mix@latest tailwindcss@latest postcss@latest autoprefixer@latest @tailwindcss/jit
+npx tailwindcss init
+npm update
+
+***************************************************************************************************
+https 연결오류
+assets/app.css 
+assets/app.js
+
+use Illuminate\Routing\UrlGenerator;
+
+class AppServiceProvider extends ServiceProvider
+    public function boot(UrlGenerator $url)
+    {
+        $url->forceScheme('https');
+    }
+}
+***************************************************************************************************
