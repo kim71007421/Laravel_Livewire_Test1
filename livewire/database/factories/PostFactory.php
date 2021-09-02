@@ -2,13 +2,10 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Seeder;
 use App\Models\Post;
 use App\Models\User;
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
-use Faker\Generator as Faker;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class PostFactory extends Factory
 {
@@ -27,11 +24,11 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'title' 		=> $this->faker->realText(30),
-            'slug'			=> $this->faker->name(),
-            'body'			=> $this->faker->realText(),
-			'author_id'		=> User::all()->pluck('id')->random(),
-			'created_at'	=> Carbon::now(),
+            'title' 		   => $this->faker->realText(30),
+            'slug'			    => $this->faker->name(),
+            'body'			    => $this->faker->realText(),
+            'author_id'		=> User::all()->pluck('id')->random(),
+            'created_at'	=> Carbon::now(),
         ];
     }
 }

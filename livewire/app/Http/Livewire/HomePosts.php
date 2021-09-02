@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class HomePosts extends Component
 {
-	public $posts;
+    public $posts;
 
     public $pageNumber = 1;
 
@@ -31,12 +31,12 @@ class HomePosts extends Component
 
         $this->posts->push(...$posts->items());
     }
-	
+
     public function render()
     {
-		//$posts = Post::latest()->paginate(20);
-		
+        //$posts = Post::latest()->paginate(20);
+
         //return view('livewire.home-posts', ['posts' => $posts]);
-		return view('livewire.home-posts');
+        return view('livewire.home-posts');
     }
 }
