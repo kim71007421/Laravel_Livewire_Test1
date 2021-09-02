@@ -3,6 +3,7 @@
 use App\Http\Controllers\CountryCityController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
