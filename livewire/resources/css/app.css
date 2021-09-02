@@ -1,3 +1,13 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer components {
+	.btn2 {
+		@apply px-4 py-2 bg-blue-600 text-white rounded;
+	}
+	
+	.label-default {
+		@apply block mb-2 text-sm font-bold text-gray-700;
+	}
+}	

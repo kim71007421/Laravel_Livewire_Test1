@@ -124,7 +124,7 @@ return [
         'email'                 => '이메일',
         'password'              => '비밀번호',
         'password_confirmation' => '비밀번호 확인',
-        'code'                  => '제품 ID',
+		    'code'                  => '제품 ID',
         'price'                 => '가격',
         'context'               => '상세설명',
         //        'use'=> '제품용도',

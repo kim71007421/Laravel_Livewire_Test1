@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\CountryCityController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/country-city', [CountryCityController::class, 'getCountryCity']);
+Route::get('/register', [RegisterController::class, 'register']);
+Route::get('/user', [RegisterController::class, 'user']);
