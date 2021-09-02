@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CountryCityController;
+use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/country-city', [CountryCityController::class, 'getCountryCity']);
+Route::get('/register', [RegisterController::class, 'register']);
+Route::get('/user', [RegisterController::class, 'user']);
