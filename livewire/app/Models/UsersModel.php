@@ -4,19 +4,19 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
 
 /**
- * App\Models\UsersModel
+ * App\Models\UsersModel.
  *
- * @property int $id
- * @property string $name
- * @property string $email
+ * @property int         $id
+ * @property string      $name
+ * @property string      $email
  * @property string|null $email_verified_at
- * @property string $password
+ * @property string      $password
  * @property string|null $remember_token
  * @property string|null $created_at
  * @property string|null $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|UsersModel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|UsersModel newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|UsersModel query()
@@ -33,10 +33,10 @@ use Illuminate\Support\Facades\DB;
 class UsersModel extends Model
 {
     use HasFactory;
-	
-	protected $table = 'users';
-	protected $primaryKey = 'id';
-	public $incrementing = true;
-	protected $keyType = 'int';
-	public $timestamps = false;
+
+    protected $table = 'users';
+    protected $primaryKey = 'id';
+    public $incrementing = true;
+    protected $keyType = 'int';
+    public $timestamps = false;
 }

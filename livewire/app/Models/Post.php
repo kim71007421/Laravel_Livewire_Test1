@@ -6,16 +6,17 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * App\Models\Post
+ * App\Models\Post.
  *
- * @property int $id
- * @property string $title
- * @property string $slug
- * @property string $body
- * @property int $author_id
- * @property mixed|null $created_at
+ * @property int                             $id
+ * @property string                          $title
+ * @property string                          $slug
+ * @property string                          $body
+ * @property int                             $author_id
+ * @property mixed|null                      $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string|null $deleted_at
+ * @property string|null                     $deleted_at
+ *
  * @method static \Database\Factories\PostFactory factory(...$parameters)
  * @method static \Illuminate\Database\Eloquent\Builder|Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Post newQuery()
