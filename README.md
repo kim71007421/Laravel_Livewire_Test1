@@ -84,6 +84,7 @@ composer require livewire/livewire
 
 # node js 16.x
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+
 apt-get install -y nodejs
 
 # tailwindcss
