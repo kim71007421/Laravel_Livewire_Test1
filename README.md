@@ -89,7 +89,9 @@ apt-get install -y nodejs
 
 # tailwindcss
 npm install -D laravel-mix@latest tailwindcss@latest postcss@latest autoprefixer@latest @tailwindcss/jit
+
 npx tailwindcss init
+
 npm update
 
 ***************************************************************************************************
