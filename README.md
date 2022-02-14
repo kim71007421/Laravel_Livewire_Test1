@@ -8,10 +8,14 @@ sudo vi /etc/apt/sources.list
 
 apt update
 
-# Install PHP as Apache Module
-sudo apt install php8.0 libapache2-mod-php8.0 -y
+# 
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 키코드
+wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
 
-sudo apt install php8.0-{bcmath,bz2,cgi,cli,curl,decimal,dev,fpm,gd,gmp,grpc,http,mbstring,mcrypt,mysql,opcache,psr,readline,swoole,tidy,uuid,xdebug,xml,xmlrpc,zip,xsl,raphf} -y
+# Install PHP as Apache Module
+sudo apt install php8.1 libapache2-mod-php8.0 -y
+
+sudo apt install php8.1-{bcmath,bz2,cgi,cli,curl,decimal,dev,fpm,gd,gmp,grpc,http,mbstring,mcrypt,mysql,opcache,psr,readline,swoole,tidy,uuid,xdebug,xml,xmlrpc,zip,xsl,raphf} -y
 
 apt purge php7.3
 
@@ -28,7 +32,7 @@ sudo a2enconf php8.0-fpm
 
 # JIT 설정
 JIT 컴파일러가 사용하도록 할당 된 메모리
-
+opcache.enable=1
 opcache.jit_buffer_size=100M
 
 JIT 컴파일러 모드로 tracing이 기본값이며, 강력히 권고되고 있습니다. (Enabled by default and recommended for most users.)
