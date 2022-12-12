@@ -20,6 +20,9 @@ sudo apt install php8.1 libapache2-mod-php8.0 -y
 
 sudo apt install php8.1-{bcmath,bz2,cgi,cli,curl,decimal,dev,fpm,gd,gmp,grpc,http,mbstring,mcrypt,mysql,opcache,psr,readline,swoole,tidy,uuid,xdebug,xml,xmlrpc,zip,xsl,raphf} -y
 
+sudo apt install php8.2 libapache2-mod-php8.2 -y
+sudo apt install php8.2-{bcmath,bz2,cgi,cli,curl,decimal,dev,fpm,gd,gmp,grpc,http,mbstring,mcrypt,mysql,opcache,psr,readline,swoole,tidy,uuid,xdebug,xml,xmlrpc,zip,xsl,raphf} -y
+
 apt purge php7.3
 
 https://yorublog.tistory.com/68
