@@ -12,6 +12,9 @@ apt update
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 키코드
 wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
 
+curl https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
+wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | apt-key add -
+
 # Install PHP as Apache Module
 sudo apt install php8.1 libapache2-mod-php8.0 -y
 
